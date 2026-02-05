@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Our First Anniversary 💖</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ffd6e8, #fff1f7);
+    text-align: center;
+    color: #444;
+}
+
+.container {
+    padding: 30px 15px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ff4f8b;
+}
+
+h2 {
+    color: #ff6fa5;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: auto;
+}
+
+.gif {
+    width: 260px;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    margin: 25px auto;
+    max-width: 650px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+button {
+    background: #ff4f8b;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #ff2f73;
+}
+
+.hidden {
+    display: none;
+}
+
+footer {
+    margin: 40px 0 10px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+/* floating hearts */
+.heart {
+    position: fixed;
+    bottom: -20px;
+    color: #ff4f8b;
+    font-size: 20px;
+    animation: float 6s linear infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100vh); opacity: 0; }
+}
+</style>
+</head>
+
+<body>
+
+<div id="page1" class="container hidden">
+
+    <h1>Happy First Anniversary Mari Minall💓</h1>
+    <h2>My Love ❤️</h2>
+
+    <img class="gif" src="https://media.tenor.com/3Yml0nL4aBwAAAAi/cosytales-love.gif">
+
+    <div class="card">
+        <p>
+            Jyar thi tu mari life ma aavi chhu,  
+            badhu j complete ane perfect lage chhe honeyy 🌸  
+            Tu j maro safe place chhu ane tara vgr kyaa y nathi chaltu,  
+            ane taro prem je mra mate chhe enu to su kau yrrr babbbbbyyyyy I am just so lucky to have you yrrr my dhinguuu bauuuuuuu j lucky chhu hu💕
+        </p>
+    </div>
+
+    <img class="gif" src="https://media1.tenor.com/m/F-qjA5AB8R4AAAAC/momo19005.gif">
+
+    <div class="card">
+        <p>
+            Thank you mane aatlo love karva mate,  
+            Thank you mane samjva mate,  
+            ane thank you rozz khali mane ane mane j choose karva mate as your life partner honeyyyy🥺❤️  
+            aa to khali aapdi pehli anniversary chhe honeyyyy haji to aakhi life 2nd,3rd,4th,5th....100th haji to bau baki chhe mari minal.......💖  
+            ane hu aatli bdhi moments aatla badha pado tari jode share krva tari jode jeevavaa bauu j excited chhu mari honeyyyy bauuuu jj ✨💕
+        </p>
+    </div>
+
+    <img class="gif" src="https://media.tenor.com/LKowL-LdjRIAAAAi/cosytales-cute.gif"><br>
+
+    <button onclick="showSurprise()">Click for a Surprise marii honeyy 😚💝</button>
+
+    <div id="surprise" class="card hidden">
+        <h2>Forever Us 💍</h2>
+
+ <img class="ghh"  src="https://i.postimg.cc/zDsyvs8J/Snapchat-68988384.jpg ">
+
+        <p>
+            Hu promise kru chhu aakhi life tari jode j rais minal💓,  
+            tari jode hasis,  
+            tari jode radis,  
+            ane roj tane pehla na divs thi roz thodu vadhare love kris myy wifeyyyy rozz💞  
+            Tu j maru aaj chhu, maru kaal hameshaa mate tu j maru badhu chhu minal tu jjjjjj i love you mari minal i love you so muchhhh 🌍❤️
+        </p>
+    </div>
+
+    <footer>
+        Made with ❤️ by hubbyy jii<b>Raj</b> for wifeyyyy <b>Mrs.Minal Raj Makwana</b>❤️🤗
+    </footer>
+ <!-- BUTTON TO OPEN PAGE 2 -->
+    <button onclick="openSecond()">Next 💝</button>
+
+</div>
+
+</div>
+
+<script>
+function showSurprise() {
+    document.getElementById("surprise").classList.remove("hidden");
+}
+
+// hearts animation
+setInterval(() => {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "💖";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (Math.random() * 20 + 15) + "px";
+    document.body.appendChild(heart);
+
+    setTimeout(() => heart.remove(), 6000);
+}, 500);
+</script>
+
+</body>
+</html>
+
+
+
+
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ffd6e8, #fff1f7);
+    text-align: center;
+    color: #444;
+}
+
+.hidden { display: none; }
+
+/* ---------- PAGE 1 STYLES ---------- */
+.container {
+    padding: 30px 15px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #ff4f8b;
+}
+
+h2 {
+    color: #ff6fa5;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: auto;
+}
+
+.gif {
+    width: 260px;
+    border-radius: 15px;
+    margin: 15px 0;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 20px;
+    margin: 25px auto;
+    max-width: 650px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+button {
+    background: #ff4f8b;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #ff2f73;
+}
+
+/* floating hearts */
+.heart {
+    position: fixed;
+    bottom: -20px;
+    color: #ff4f8b;
+    font-size: 20px;
+    animation: float 6s linear infinite;
+}
+
+@keyframes float {
+    0% { transform: translateY(0); opacity: 1; }
+    100% { transform: translateY(-100vh); opacity: 0; }
+}
+
+/* ---------- PAGE 2 STYLES ---------- */
+.page2 {
+    background: #fff0f6;
+    min-height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.section {
+    padding: 50px 20px;
+}
+
+.hero {
+    background: linear-gradient(180deg, #ffb6d5, #fff0f6);
+    padding: 70px 20px;
+}
+
+.hero h1 {
+    font-size: 2.7rem;
+    color: #ff3f81;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+.page2 img {
+    width: 280px;
+    border-radius: 20px;
+    margin: 20px 0;
+}
+
+.box {
+    background: white;
+    padding: 30px;
+    border-radius: 25px;
+    max-width: 650px;
+    margin: auto;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+}
+
+.love-btn {
+    background: #ff3f81;
+    color: white;
+    padding: 14px 30px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.love-btn:hover {
+    background: #ff1f6a;
+}
+/* slide animations */
+.slide-in {
+    animation: slideIn 0.6s ease forwards;
+}
+
+.slide-out {
+    animation: slideOut 0.6s ease forwards;
+}
+
+@keyframes slideIn {
+    from { transform: translateX(100%); opacity: 0; }
+    to { transform: translateX(0); opacity: 1; }
+}
+
+@keyframes slideOut {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(-100%); opacity: 0; }
+}
+
+footer {
+    margin: 40px 0;
+    font-size: 0.9rem;
+    color: #777;
+}
+.music-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #ff4f8b;
+    color: white;
+    border-radius: 25px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+.music-btn:hover {
+    background: #ff2f73;
+}
+.page2, .container {
+    transition: transform 0.8s ease, opacity 0.8s ease;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(100%);
+    pointer-events: none;
+}
+.unlock-photo {
+    width: 260px;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    animation: pulse 1.8s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.page2, .container {
+    transition: all 0.8s ease;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateX(100%);
+    pointer-events: none;
+}	
+</style>
+</head>
+
+<body>
+
+
+
+   
+
+<!-- ================= PAGE 2 ================= -->
+<div id="page2" class="page2 hidden">
+
+    <div class="section hero">
+        <h1>Happy 1st Anniversary 💞</h1>
+        <p>To the girl who owns my heart marii minudi🤗😚💖</p>
+        <img src="https://media1.tenor.com/m/mixQhMj82-oAAAAC/puuung-love.gif">
+    </div>
+
+    <div class="section">
+        <div class="box">
+            <p>
+                Apdo pehlo hug, pehli kiss, pehli vaar je me tane hath pakdi ne kidhu ne ke i love you too yrrr minall serioslyy best moment yrr bachaaaa i love you 🌷  
+                Atla badha time pachhi b tari mate maro prem divse ne divse vadhto j jaye yrr honeyyyyyyy yrr minal ane aa prem ne ave 1 vars thy gyu yrr dhinguuuu i am so happyyy myy wifeyyyyy 💞💓💖💗—  
+                Mari harr ek life harr ek janam ma hu tane j mari life partner banava magu yrr minall tane jj bss ❤️
+		Tu mari mate etli perfect chhu ne tara thi vadhare tara krta ochhu naa tara jevu koi nyy joitu bss tu j joie minall mane tu jjjjj...💌🫂
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <img src="https://media1.tenor.com/m/e9qIWJMe10wAAAAC/puuung-puuung-kiss.gif">
+        <div class="box">
+            <p>
+                Tu maru comfort chhu, tu j maru safe place chhu,  
+                mari favouritesttt notification chhu tu minalll,  
+                myy wifeyyyyy 🥺💘
+            </p>
+        </div>
+    </div>
+
+    <div class="section">
+        <button class="love-btn" onclick="openLove()">Tap here my love💗</button>
+
+        <div id="love" class="box hidden">
+            <h2>My Promise 💍</h2>
+<img src="https://media.tenor.com/wP3DRkFj930AAAAM/puuung-hug.gif">
+
+            <p>
+                I promise honeyyy tara harr ek pal sara ke kharab je hoy e koi hoi ke naa hoy pn hu hamesha tari baju maa ubho hois mari minal hameshaaaa💓💖,  
+                And i promise you also ke i will merry you mari minal i will only and only marry you kyy b thay bss💓💓💓💌,  
+                Tu mara mate hamesha vadhare ne vadhare prem kris rojj honeyyyy bhale aapda chhokra thay jaay aapde garda thy jaie je b thay life ma minal hamesha tane prem kris ane tari jode j rais mari wifeyyyyyyy 🌙✨  
+                aapde banne ek j hoisu minal ane raj nyy RAJMIN j kevaisu honeyyyy aapde alg j nyy thaie bss minal no rajj ane raj ni minalll bss💖🤗🤗🤗🤗💞
+            </p>
+        </div>
+    </div>
+
+<button onclick="goBackToFirst()">⬅ Back</button>
+
+    <footer>
+        Made with endless love ❤️ by <b>Raj(Chikkuuuuu)</b>
+    </footer>
+
+</div>
+<!-- ================= PAGE 3 ================= -->
+<div id="page3" class="page2">
+<h1>Tap our photo honey🤗💖</h1>
+<p>Before everything… start our song 🎶</p>
+  <div class="box">
+        <p>
+            This song reminds me of you,  
+            us, and everything beautiful about us honeyyy...🥺❤️
+        </p>
+
+<img 
+  src="https://image2url.com/r2/default/images/1770285339549-0f31fe95-9007-4be1-9be2-6f087d94378d.jpeg"
+  class="unlock-photo"
+  onclick="unlockLove()"
+/>
+
+
+    <div class="hero">
+        <h1>Our Song 🎶</h1>
+        <p>Play it & feel us 💞</p>
+    </div>
+
+  
+
+        <!-- MUSIC -->
+<!-- MUSIC LINK -->
+<audio id="music" loop>
+    <source src="https://files.catbox.moe/a340ki.mp3" type="audio/mpeg">
+</audio>
+
+
+
+    </div>
+
+<button onclick="goBack()">⬅ Back</button>
+
+    <footer>
+        Forever yours ❤️ <b>Raj</b>
+    </footer>
+
+</div>
+
+<script>
+function openSecond() {
+    document.getElementById("page1").classList.add("hidden");
+    document.getElementById("page2").classList.remove("hidden");
+    window.scrollTo(0, 0);
+}
+function goBack() {
+    const page3 = document.getElementById("page3");
+    const page2 = document.getElementById("page2");
+
+    page3.classList.add("slide-out");
+
+    setTimeout(() => {
+        page3.classList.add("hidden");
+        page3.classList.remove("slide-out");
+
+        page2.classList.remove("hidden");
+        page2.classList.add("slide-in");
+    }, 600);
+
+    window.scrollTo(0, 0);
+}
+function openMusic() {
+    const page2 = document.getElementById("page2");
+    const page3 = document.getElementById("page3");
+
+    page2.classList.add("slide-out");
+
+    setTimeout(() => {
+        page2.classList.add("hidden");
+        page2.classList.remove("slide-out");
+
+        page3.classList.remove("hidden");
+        page3.classList.add("slide-in");
+    }, 600);
+
+    window.scrollTo(0, 0);
+}
+
+function goBackToFirst() {
+    document.getElementById("page2").classList.add("hidden");
+    document.getElementById("page1").classList.remove("hidden");
+    window.scrollTo(0, 0);
+}
+
+function openLove() {
+    document.getElementById("love").classList.remove("hidden");
+}
+
+// floating hearts
+setInterval(() => {
+    const heart = document.createElement("div");
+    heart.className = "heart";
+    heart.innerHTML = "💖";
+    heart.innerHTML = "🤗";
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = (Math.random() * 20 + 15) + "px";
+    document.body.appendChild(heart);
+    setTimeout(() => heart.remove(), 6000);
+}, 500);
+</script>
+<script>
+function startLove() {
+    const music = document.getElementById("music");
+    music.play();
+
+    // slide to page 1 after music starts
+    setTimeout(() => {
+        document.getElementById("page3").classList.add("hidden");
+        document.getElementById("page1").classList.remove("hidden");
+        window.scrollTo(0, 0);
+    }, 800);
+}
+</script>
+<script>
+function unlockLove() {
+    const music = document.getElementById("music");
+    music.play();
+
+    setTimeout(() => {
+        document.getElementById("page3").classList.add("hidden");
+        document.getElementById("page1").classList.remove("hidden");
+        window.scrollTo(0, 0);
+    }, 700);
+}
+</script>	
+</body>
+</html>
